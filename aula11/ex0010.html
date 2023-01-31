@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAM</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>DETRAM</h1>
+    <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">Resultado</div>
+    <script>
+        var txtv = document.getElementById('txtvel')
+        var res = document.getElementById('res')
+        function verificar() {
+            vel = Number(txtv.value)
+            if (vel > 60) {
+                res.innerHTML = `Você ultrapassou velocidade MULTADO!`
+            } else {
+                res.innerHTML = `<p>Velocidade normal</p>`
+                res.innerHTML += `<p>Dirija com cinto de segurança</p>`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios com DOM</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <p>Inicio com estudos com DOM</p>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Click me</div>
+    <script>
+        var a = document.getElementsByTagName('h1')[0]
+        var b = document.getElementsByTagName('p')[0]
+        var c = document.getElementsByTagName('p')[1]
+        var msg = document.getElementById('msg')
+        a.style.color = 'green'
+        b.style.color = 'red'
+        c.style.color = 'blue'
+        msg.style.background = 'green'
+        msg.style.color = 'blue'
+    </script>
+</body>
+</html>
